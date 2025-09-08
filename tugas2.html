@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e8ded;
+            padding: 20px;
+        }
+        form {
+            background-color: #df9cde;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        .radio-group,
+        .checkbox-group {
+            margin-top: 10px;
+        }
+        .radio-group label,
+        .checkbox-group label {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h1 style="color: rgb(46, 3, 26); ">
+        <center>FORM MAHASISWA </center>
+    </h1>
+    <p>
+         Nama:<br>
+        <input type="text" placeholder="Ketikkan nama anda"
+    </p>
+    <p>
+        Password:<br>
+        <input type="password"  placeholder="Masukkan password anda"
+    </p>
+    <p>
+        Alamat:<br>
+        <textarea id="alamat" name="alamat" placeholder="Masukkan alamat anda"></textarea>
+    <p>
+        Jenis Kelamin:<br>
+        <input name="a" type="radio">Laki-laki
+        <input name="a" type="radio">Perempuan
+    </p>
+    <p>
+        Program Studi:<br>
+        <input type="checkbox" value="Membaca">Teknologi Informasi
+        <input type="checkbox" value="Membaca">Ilmu Komputer
+    </p>
+    <p>
+        Agama:<br>
+    <select>
+        <option value="">-- Pilih Agama --</option>
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+            <option value="konghucu">Konghucu</option><option>
+    </select>
+    </p>
+    <p>
+        <input type="submit" value="kirim"
+    </p>
+    </form>
+</body>
+</html>
